@@ -34,10 +34,16 @@ PS C:\Dev\node\feedback_app> node index.js
 .Initializing web server module
 
 .Web server listening on localhost:3000
+
+.Login for Feedback
 ![Login for Feedback](https://github.com/Nishant1027/Feedback-system/blob/master/feedback_app/login1.png)
 
+
+.Home Page
 ![Home Page](https://github.com/Nishant1027/Feedback-system/blob/master/feedback_app/home1.png)
 
 
 
+
+.Feedback Form which has been attached with oracle database
 ![Feedback Form which has been attached with oracle database](https://github.com/Nishant1027/Feedback-system/blob/master/feedback_app/feedback1.png)
