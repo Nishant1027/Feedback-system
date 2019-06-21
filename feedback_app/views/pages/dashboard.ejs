@@ -1,0 +1,65 @@
+<body>
+  <!-- Sidenav -->
+  <% include ../partials/sidebar %>
+  <!-- Main content -->
+  <div class="main-content">
+    <!-- Top navbar -->
+    <% include ../partials/navbar %>
+    <!-- Header -->
+    <% include ../partials/header %>
+    <!-- Page content -->
+      <div class="container-fluid mt--7">
+        <div class="col-xl-8 mb-5 mb-xl-0">
+          <div class="card shadow">
+            <div class="card-header border-0">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h3 class="mb-0">Feedbacks</h3>
+                </div>
+                <div class="col text-right">
+                  <a href="/faculty" class="btn btn-sm btn-primary">Faculty</a>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <!-- Projects table -->
+              <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Faculty Code</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Department</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <%teachers.forEach(function(teacher){%>
+                  <tr>
+                    <th scope="row">
+                     <%= teacher.Teacher_ID %>
+                    </th>
+                    <td>
+                      <%= teacher.First_Name %>
+                    </td>
+                    <td>
+                      <%= teacher.Last_Name %>
+                    </td>
+                    <td>
+                      <%= teacher.Designation %>
+                    </td>
+                     <td>
+                      <%= teacher.Dept %>
+                    </td>
+                  </tr>
+                  <% }); %>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+  <!-- Include scripts -->
+  <% include ../partials/scripts %>
+</body>

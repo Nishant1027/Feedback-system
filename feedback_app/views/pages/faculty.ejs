@@ -1,0 +1,86 @@
+<body>
+  <!-- Sidenav -->
+  <% include ../partials/sidebar %>
+  <!-- Main content -->
+  <div class="main-content">
+    <!-- Top navbar -->
+    <% include ../partials/navbar %>
+    <!-- Header -->
+    <% include ../partials/faculty/header %>
+    <!-- Page content -->
+    <div class="container-fluid mt--7">
+      <div class="col-xl-8 mb-5 mb-xl-0">
+        <div class="card shadow">
+          <div class="card-header border-0">
+            <div class="row align-items-center">
+
+              <div class="col text-right">
+                <a href="/faculty" class="btn btn-sm btn-primary">Faculty</a>
+              </div>
+            </div>
+          </div>
+         </div>
+      </div>
+    <div class="container-fluid mt--7">
+      <div class="row">
+       <%teachers.forEach(function(teacher){%>
+        <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+          <div class="card card-profile shadow">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 order-lg-2">
+                <div class="card-profile-image">
+                  <a href="#">
+                    <img src="img/theme/maity.png" class="rounded-circle">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+              <div class="d-flex justify-content-between">
+              </div>
+            </div>
+            
+            <div class="card-body pt-0 pt-md-4">
+              <div class="row">
+                <div class="col">
+                  <div class="card-profile-stats d-flex justify-content-center mt-md-5">
+                    <div>
+                      <span class="heading">17 <i class="ni ni-like-2"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <h3>
+                  <a href="/faculty_profile"> <%= teacher.First_Name + teacher.Last_Name %><span class="font-weight-light"></span></a>
+                </h3>
+                <td>
+                      <a href="/faculty_profile">S</a>
+                </td>
+                <div class="h5 font-weight-300">
+                  <i class="ni location_pin mr-2"></i>  <%= teacher.Designation %>, IIIT Allahabad
+                </div>
+                <div class="h5 mt-4">
+                  <i class="ni business_briefcase-24 mr-2"> <%= teacher.Dept %></i>
+                </div>
+                <div>
+                  <i class="ni education_hat mr-2">Computer Science Unit of the Indian Institue of Technology, Delhi, India</i>
+
+                </div>
+                <hr class="my-4" />
+                <p></p>
+                <a href="/feedback">Add Feedback</a>
+              </div>
+            </div> 
+
+
+          </div>
+        </div>
+        <% }); %>
+      </div>
+     </div> 
+
+
+  <!-- Include scripts -->
+  <% include ../partials/scripts %>
+</body>

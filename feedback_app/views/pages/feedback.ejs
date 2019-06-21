@@ -1,0 +1,102 @@
+<body>
+  <!-- Sidenav -->
+  <% include ../partials/sidebar %>
+  <!-- Main content -->
+  <div class="main-content">
+    <!-- Top navbar -->
+    <% include ../partials/navbar %>
+    <!-- Header -->
+    <% include ../partials/feedback/header %>
+    <!-- Page content -->
+    <div class="container mt--8 pb-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-7">
+          <div class="myclass card bg-secondary shadow border-0">
+            <div class="card-header bg-transparent pb-5">
+              <div class="card-body px-lg-5 py-lg-5">
+                <div class="btn-wrapper text-center">
+                  <a href="#" class="btn btn-neutral btn-icon">
+                    <span class="btn-inner--icon"></span>
+                    <span class="btn-inner--text myclass"><i class="ni ni-bullet-list-67"></i> FEEDBACK</span>
+                  </a>
+                </div>
+              </div>
+              <form role="form" action="/api/feedbacks" method="POST">
+                <div class="form-group mb-3">
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class=""></i></span>
+                    </div>
+                  <input type="text" class="form-control" id="1" name="Course_Title" rows="3" placeholder="Course name"></input>
+                  </div>
+                  </div>
+                  <div class="form-group mb-3">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class=""></i></span>
+                      </div>
+                    <input type="text" class="form-control" id="2" name="Enrollment_Number"rows="3" placeholder="Enrollment no"></input>
+                    </div>
+                    </div>
+                    <div class="form-group mb-3">
+                      <div class="input-group input-group-alternative">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class=""></i></span>
+                        </div>
+                      <input type="text" class="form-control" id="3" rows="3" name="Teacher_Code" placeholder="Faculty Code"></input>
+                      </div>
+                      </div>
+                  <div class="form-group mb-3">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class=""></i></span>
+                      </div>
+                    <input type="text" class="form-control" id="4" rows="3" name="Rate_the_quality" placeholder="Rate the quality 0-5"></input>
+                    </div>
+                    </div>
+                <div class="form-group mb-3">
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class=""></i></span>                       
+                    </div>
+                  <input type="text" class="form-control" id="5" rows="3" name="Rate_the_assigment" placeholder="Rate Assignments/Quizzes 0-5"></input>
+                  </div>
+                </div>
+                <div class="form-group mb-3">
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class=""></i></span>
+                    </div>
+                  <input type="text" class="form-control" id="6" rows="3" name="Rate_The_Punctuality" placeholder="Rate Punctuality 0-5"></input>
+                  </div>
+                </div>
+                <div class="form-group mb-3">
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class=""></i></span>
+                    </div>
+                  <input type="text" class="form-control" id="7" rows="3" name="Comment" placeholder="Write your comment here ..."></input>
+                  </div>
+                  </div>
+                  <div class="form-group mb-3">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class=""></i></span>
+                      </div>
+                    <input type="text" class="form-control" id="8" rows="3" name="Remarks" placeholder="Write your remarks here ..."></input>
+                    </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                  <button class="btn btn-primary my-4" href="/">Add</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+
+  <!-- Include scripts -->
+  <% include ../partials/scripts %>
+</body>
