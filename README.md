@@ -1,6 +1,6 @@
 # Feedback-system
 
-I'm aware I'm commiting the db user,pass and connection string. This is not a production application and for this instance it does not matter, but typically, this would be a very very bad thing to do.
+
 
 SETUP
 
@@ -34,10 +34,10 @@ PS C:\Dev\node\feedback_app> node index.js
 .Initializing web server module
 
 .Web server listening on localhost:3000
-![Login for Feedback](https://drive.google.com/open?id=1sQJlSeWVn1GGp6Qhjjrm8MC-QNLCBZY_)
+![Login for Feedback](https://github.com/Nishant1027/Feedback-system/blob/master/feedback_app/login1.png)
 
-![Home Page](https://drive.google.com/open?id=1JY6UxZold0ttfD1N8pE01qvAfLkz5T6S)
+![Home Page](https://github.com/Nishant1027/Feedback-system/blob/master/feedback_app/home1.png)
 
 
 
-![Feedback Form which has been attached with oracle database](https://drive.google.com/open?id=1oZ30B86SMEP9B_96f8Izo3eUmeV_QcPF)
+![Feedback Form which has been attached with oracle database](https://github.com/Nishant1027/Feedback-system/blob/master/feedback_app/feedback1.png)
